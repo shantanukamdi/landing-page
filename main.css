@@ -31,7 +31,7 @@ body {
 }
 
 .login .login_form h4 {
-  color: #086ad5;
+  color: #df2142;
   font-weight: 500;
   font-size: 24px;
 }
@@ -45,11 +45,7 @@ input[type="password"] {
   border: 0;
   outline: 0;
   background: transparent;
-  border-bottom: 1px solid #086ad5;
-}
-
-::placeholder {
-  font-style: italic;
+  border-bottom: 1px solid #47b5bb;
 }
 
 .btn {
@@ -61,7 +57,7 @@ input[type="password"] {
 
 .btn-login {
   width: 70%;
-  background-color: #086ad5;
+  background-color: #1A1AD2;
   color: white;
   font-weight: 700;
 }
