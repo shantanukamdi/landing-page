@@ -1,7 +1,7 @@
 :root {
-  --backgroundColor: #fff;
-  --btnColor: #2e364f;
-  --fontColor: #ef5939;
+  --backgroundColor: #f7f9f969;
+  --btnColor: #1a73e8;
+  --fontColor: #fff;
 }
 * {
   margin: 0;
@@ -18,15 +18,16 @@ body {
 }
 
 .login {
-  width: 30vw;
+  width: 35vw;
   height: 80vh;
   position: relative;
-  top: 50px;
-  left: 10px;
+  top: 60px;
+  left: 20px;
   background-color: #fff;
   box-shadow: 0 12px 18px 2px rgba(34, 0, 51, 0.04),
     0 6px 22px 4px rgba(7, 48, 114, 0.12),
     0 6px 10px -4px rgba(14, 13, 26, 0.12);
+  color: #283044;
 }
 
 .login h4 {
@@ -36,16 +37,26 @@ body {
 
 .login_btn_grp {
   display: flex;
-  justify-content: space-around;
-  padding: 10px;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.login_btn_grp button {
+.login_btn_grp div {
   width: 50%;
   cursor: pointer;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
   box-shadow: none;
+  border: 1px solid #eee;
+}
+
+.login_btn_grp div:nth-child(1) {
+  border-right: none;
+}
+.login_btn_grp div:nth-child(2) {
+  border-left: none;
 }
 
 .active {
@@ -73,7 +84,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
+  transition: all 0.7s ease-in-out;
 }
 
 #signup {
@@ -81,6 +92,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 80px;
+  transition: all 0.7s ease-in-out;
 }
 
 input[type="email"],
@@ -107,7 +120,7 @@ input[type="password"] {
 }
 
 .btn-login {
-  width: 150px;
+  width: 200px;
   background-color: var(--btnColor);
   color: var(--fontColor);
   font-weight: 700;
@@ -115,6 +128,10 @@ input[type="password"] {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.login_image {
+  margin-top: 20px;
 }
 
 img {
